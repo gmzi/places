@@ -1,0 +1,57 @@
+.Header {
+  /* position: relative; */
+}
+
+.Nav {
+  position: fixed;  
+  top: 0; 
+  width: 100%; 
+  height: 2.8em;
+  padding: 0.4rem .5rem;
+  background-color: rgba(255, 255, 255, 0.653);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgb(237, 231, 231);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----------------------------------------------------------------------------- */
+@media (min-width: 767px) and (max-width: 1023px){
+  .Nav {
+    width: 60%;
+    border: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .Nav {
+    width: 40%;
+    border: none;
+  }
+}
+/* ----------------------------------------------------------------------------- */
+.Nav a {
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.siteTitle {
+  font-weight: bold;
+  font-size: normal;
+  text-decoration: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.siteDescription {
+  display: block;
+  font-size: small;
+  font-weight: lighter;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
