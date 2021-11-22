@@ -1,41 +1,31 @@
-# TODOS
+# Use
+
+On mounting, app asks for location permission, if granted, app detects browser latlong and displays a list with places open at current time, sorted by closest to current location. If permission to access location is denied, app displays a form to enter location manually (by full address, street name only, or city name only). User can change location at any time with button displayed on top. At bottom of page there's a dashboard where user can filter list by search term, distance, budget, and veggie or vegan options. Filters remain applied when changing location of the search.  
+
+Live demo: https://places-alpha.vercel.app
+
+## Tooling
+
+- React
+- Next.js 
+
+## API
+
+Yelp fusion (https://fusion.yelp.com)
+
+### contribute
+
+1. Clone repo, 
+2. `npm install` dependencies 
+3. `npm run dev` 
+4. go to `http://localhost:3000/` in local browser.
+
+
+### TODOS
+
 [] detect scroll direction with useScrollDirection and fix places count message on top of navbar.
-[] sandwich menu in navbar to login and register to save places
-[] SWIPE DOWN TO CLOSE IMAGES (https://www.npmjs.com/package/react-swipeable)
-[] add search by place name (checkout yelp api GET https://api.yelp.com/v3/businesses/matches)
-
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[] save places upon register/login.
+[] implement useScrollDirection hook (already drafted) to: 
+    - close ImageDisplay when swipping down. 
+    - position places count and search term fixed at top of page.
+[] implement suggestions on search form, and flexible matching results. 

@@ -13,7 +13,7 @@ export default function Navbar({ siteTitle, siteDescription }) {
             <h4 className={styles.siteDescription}>{siteDescription}</h4>
           </a>
         </Link>
-        <Link href="https://github.com/gmzi/w2g_next">
+        <Link href="https://github.com/gmzi/places">
           <a target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg"
               width="25"
